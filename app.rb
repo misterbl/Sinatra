@@ -21,5 +21,5 @@ get '/address' do
 end
 
 get '/cat' do
-  "<div><style>img{border-color: red; border-style: dashed}</style><img src='http://bit.ly/1eze8aE'></div>"
+  erb :index
 end
