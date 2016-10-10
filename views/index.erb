@@ -8,3 +8,12 @@ img {border-color: red; border-style: dashed}
 </head>
 <img src="http://bit.ly/1eze8aE"/>
 </html>
+
+  <% if @name.empty? %>
+<form action="/named-cat">
+  <div>
+    <input type="text" name="name" />
+    <input type="submit" value="Submit" />
+  </div>
+</form>
+<% end %>
